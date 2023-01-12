@@ -1,0 +1,25 @@
+for i, v in pairs(game.Players:GetPlayers()) do
+
+local player = game.Players.Panther1889
+
+if v~= game.Players.Panther1889 then
+
+     player.Chatted:connect(function(msg)
+
+      if msg == "Ur My Son" then
+
+local A_1 = "Im Sorry Master Panther Im Hacking"
+
+local All = "All"
+
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+
+Event:FireServer(A_1, All)
+
+end
+
+end)
+
+end
+
+end
