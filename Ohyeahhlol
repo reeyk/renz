@@ -1,0 +1,19 @@
+local player = game.Players.Panther1889
+
+        player.Chatted:connect(function(msg)
+
+for i, v in pairs(game.Players:GetPlayers()) do
+
+        if msg == "votar" then
+
+                if v~= game.Players.Panther1889 then
+
+        v:Kick("Kicked")
+
+        end
+
+    end
+
+    end
+
+end)
